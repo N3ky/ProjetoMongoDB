@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="port-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.style.css">
+    <title>Gerador de Documentos MongoDB</title>
+</head>
+<body>
+    <h1>Relatorio de Atividades</h1>
+    <form id="documentForm">
+        <fieldset>
+            <legend>Informações Gerais</legend>
+            <label>Titulo:</label>
+            <input type="text" id="titulo" required>
+
+            <label>Tipo:</label>
+            <select id="tipo">
+                <option value="Relatorio">Relatorio</option>
+                <option value="Planejamento">Planejamento</option>
+            </select>
+
+            <label>Ano:</label>
+            <input type="number" id="ano" min="1900" max="2100" required>
+
+            <label>Status:</label>
+            <select id="status">
+                <option value="Aprovado">Aprovado</option>
+                <option value="Em revisão">Em revisão</option>
+                <option value="Cancelado">Cancelado</option>
+            </select>
+        </fieldset>
+
+    </form>
+</body>
+</html>
